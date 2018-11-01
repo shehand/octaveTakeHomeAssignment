@@ -1,0 +1,9 @@
+>> function [xunit,yunit] = getCircle(x,y,r)
+t = linspace(0,2*pi,1000);
+xunit = r.*cos(t) + x;
+yunit = r.*sin(t) + y;
+return;
+endfunction
+>> [a,b] = getCircle(2,2,2);
+>> plot(a,b)
+>> diary
